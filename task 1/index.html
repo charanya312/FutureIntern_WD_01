@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Play</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#"
+            >pl<span><i class="ri-play-fill"></i></span>y</a
+          >
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn">Sign Up</button>
+      </div>
+    </nav>
+    <header class="section__container header__container">
+      <div class="header__image">
+        <img src="assets\header.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <h2>CREATE PLAYLIST & SHARE IT WITH YOUR FRIENDS</h2>
+        <h1>MUSIC FOR YOUR CURRENT MOOD</h1>
+        <p>
+          Discover the perfect soundtrack for every moment with our 'Music for
+          Your Current Mood' section. Whether you're feeling upbeat, reflective,
+          or somewhere in between, explore curated playlists and tunes tailored
+          to match your mood.
+        </p>
+        <div class="header__btns">
+          <a href="#">
+            <img src="assets/google-play.jpg" alt="google-play" />
+          </a>
+          <a href="#">
+            <img src="assets/app-store.jpg" alt="app-store" />
+          </a>
+        </div>
+      </div>
+    </header>
+<section id="trending" class="section__container">
+  <h2>Trending Now</h2>
+  <p>Check out what's trending in the music world right now!</p>
+
+  <div class="trending__content">
+    <!-- Trending Item 1 -->
+    <article class="trending__item">
+      <img src="assets/trending1.png" alt="Trending Image 1" class="trending__image">
+      <div class="trending__info">
+        <h3>Top 10 Songs of the Week</h3>
+        <p>Explore the most popular songs this week across different genres and regions. Find out what's hot on the charts!</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </article>
+
+    <!-- Trending Item 2 -->
+    <article class="trending__item">
+      <img src="assets/trending2.png" alt="Trending Image 2" class="trending__image">
+      <div class="trending__info">
+        <h3>Rising Artists to Watch</h3>
+        <p>Discover new artists who are making waves in the industry with their fresh sounds and unique styles.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </article>
+
+    <!-- Trending Item 3 -->
+    <article class="trending__item">
+      <img src="assets/trending3.png" alt="Trending Image 3" class="trending__image">
+      <div class="trending__info">
+        <h3>Music Festivals Around the World</h3>
+        <p>Get ready for the biggest music festivals happening around the globe. Find out where your favorite artists are performing live.</p>
+        <a href="#" class="btn">See Details</a>
+      </div>
+    </article>
+  </div>
+  <!-- Collections Section -->
+<section id="collections" class="section__container">
+  <h2>Music Collections</h2>
+  <p>Explore our curated collections of playlists, albums, and artist compilations.</p>
+
+  <div class="collections__content">
+    <!-- Collection Item 1 -->
+    <article class="collection__item">
+      <img src="assets/collection1.png" alt="Collection Image 1" class="collection__image">
+      <div class="collection__info">
+        <h3>Chill Vibes Playlist</h3>
+        <p>Relax with our handpicked selection of chill tracks perfect for unwinding after a long day.</p>
+        <a href="#" class="btn">Listen Now</a>
+      </div>
+    </article>
+
+    <!-- Collection Item 2 -->
+    <article class="collection__item">
+      <img src="assets/collection2.png" alt="Collection Image 2" class="collection__image">
+      <div class="collection__info">
+        <h3>Ultimate Road Trip Album</h3>
+        <p>Hit the road with these classic tracks that are perfect for your next adventure.</p>
+        <a href="#" class="btn">Explore Album</a>
+      </div>
+    </article>
+
+    <!-- Collection Item 3 -->
+    <article class="collection__item">
+      <img src="assets/collection3.png" alt="Collection Image 3" class="collection__image">
+      <div class="collection__info">
+        <h3>Indie Rock Essentials</h3>
+        <p>Discover the best of indie rock with this essential playlist featuring top artists and tracks.</p>
+        <a href="#" class="btn">Discover More</a>
+      </div>
+    </article>
+  </div>
+</section>
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <input type="text" id="username" name="username" placeholder="Username" required><br>
+          <input type="password" id="password" name="password" placeholder="Password" required><br>
+          <input type="password" id="repassword" name="repassword" placeholder="Re-enter Password" required><br>
+          <input type="email" id="email" name="email" placeholder="Email" required><br>
+          <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required><br>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Contact Section -->
+<section id="contact" class="section__container">
+  <h2>Contact Us</h2>
+  <p>If you have any questions or need support, please fill out the form below or reach out to us directly.</p>
+
+  <form class="contact__form" action="#" method="POST">
+    <div class="form__group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name">
+    </div>
+    
+    <div class="form__group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Your Email">
+    </div>
+
+    <div class="form__group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
